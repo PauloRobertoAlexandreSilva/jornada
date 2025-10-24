@@ -1,0 +1,16 @@
+:root {
+    --cor1: #8BF4FF;
+    --cor2: #5AEFFF;
+    --cor3: #12CBE4;
+    --cor4: #07747F;
+}
+
+body { 
+    background-color: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+  
+  
+  
