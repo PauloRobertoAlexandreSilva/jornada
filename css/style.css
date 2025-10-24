@@ -1,16 +1,31 @@
 :root {
-    --cor1: #8BF4FF;
-    --cor2: #5AEFFF;
+    --cor1: #07747F;
+    --cor2: #8BF4FF;
     --cor3: #12CBE4;
-    --cor4: #07747F;
 }
 
-body { 
-    background-color: #000;
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
+html, body {
+    overscroll-behavior-inline: none;
+    overscroll-behavior: none;
 }
-  
-  
-  
+
+body { background-color: var(--cor1) !important; color: var(--cor2) !important; font-weight: bolder; }
+input, button { font-weight: bolder !important;}
+nav, nav a span { background-color: var(--cor1); color:  var(--cor2); }
+select,input[type=text] { margin-bottom: 5px;}
+
+.splash-logo {
+    z-index: 10;
+    position: absolute;
+    width: 256px; height: 256px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('../img/icon_256.png');
+    animation: blinker 2s linear;
+    opacity: 0;
+}
+@keyframes blinker {
+    0% { opacity: 100%; display: block;}
+    100% { opacity: 0; display: none;}
+}
